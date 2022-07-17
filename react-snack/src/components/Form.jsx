@@ -9,14 +9,6 @@ export default function Form() {
   const city = UseInput("", { isEmpty: true });
   const street = UseInput("", { isEmpty: true });
   const house = UseInput("", { isEmpty: true });
-  console.log(
-    !name.validInput,
-    !phone.validInput,
-    !email.validInput,
-    !city.validInput,
-    !street.validInput,
-    !house.validInput
-  );
 
   return (
     <div className="form__container">
@@ -42,7 +34,7 @@ export default function Form() {
             onBlur={() => phone.onBlur()}
           />
           {phone.isDirty && phone.isEmpty && <div className="form__error">Поле не может быть пустым.</div>}
-          {phone.isDirty && phone.minLengthError && phone.phoneError && (
+          {phone.isDirty && phone.minLengthError && !phone.phoneError && (
             <div className="form__error">Некорректный номер.</div>
           )}
         </div>
