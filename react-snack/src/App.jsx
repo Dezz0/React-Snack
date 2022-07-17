@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
+import Form from "./components/Form";
 
 import Body from "./components/Body";
 import Cart from "./components/Cart";
@@ -46,6 +47,7 @@ export default function App() {
           path="/cart"
           element={<Cart queue={queue} deleteSnackInQueue={deleteSnackInQueue} clearQueue={clearQueue} />}
         />
+        <Route path="/form" element={<Form />} />
       </Routes>
     </div>
   );

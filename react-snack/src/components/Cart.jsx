@@ -48,7 +48,9 @@ export default function Cart({ queue, deleteSnackInQueue, clearQueue }) {
         <Link className="cart__item-button-back button" to="/">
           Вернуться на главную страницу
         </Link>
-        {!queue.length ? "" : <button className="cart__item-button-buy button">Оплатить сейчас</button>}
+        <Link to="/form">
+          {!queue.length ? "" : <button className="cart__item-button-buy button">Указать адрес</button>}
+        </Link>
       </div>
     </div>
   );

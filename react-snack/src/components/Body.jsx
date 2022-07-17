@@ -7,8 +7,10 @@ export default function Body({ addSnackInQueue }) {
   const allSnacks = useSelector(snacks);
   const filterBySnacks = useSelector(filterBy);
 
-  const filtredSnacks = allSnacks.filter((snack) => snack.type === filterBySnacks);
-
+  const filtredSnacks =
+    filterBySnacks === "Все"
+      ? allSnacks.filter((snack) => snack.type !== filterBySnacks)
+      : allSnacks.filter((snack) => snack.type === filterBySnacks);
   const render = filtredSnacks.map((snack) => (
     <FoodСontainer key={snack.id} {...snack} addSnackInQueue={addSnackInQueue} />
   ));

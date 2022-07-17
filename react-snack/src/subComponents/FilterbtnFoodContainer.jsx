@@ -1,5 +1,5 @@
-import { nanoid } from "@reduxjs/toolkit";
 import React from "react";
+import { nanoid } from "@reduxjs/toolkit";
 
 export default function FilterbtnFoodContainer({ handleChangeD, id, d }) {
   const filterBtn = [

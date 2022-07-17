@@ -1,13 +1,13 @@
-import { nanoid } from "@reduxjs/toolkit";
 import React from "react";
 
 export default function FilterBySnack({ filterBySnacks, handleChangeFilterSnacks }) {
   const filterBtn = [
-    { id: nanoid(), value: "Пицца" },
-    { id: nanoid(), value: "Бургеры" },
-    { id: nanoid(), value: "Закуски" },
-    { id: nanoid(), value: "Десерты" },
-    { id: nanoid(), value: "Напитки" }
+    { id: 0, value: "Все" },
+    { id: 1, value: "Пицца" },
+    { id: 2, value: "Бургеры" },
+    { id: 3, value: "Закуски" },
+    { id: 4, value: "Десерты" },
+    { id: 5, value: "Напитки" }
   ];
   const render = filterBtn.map((btn, i) => (
     <div className="header__filter-btn" key={i}>

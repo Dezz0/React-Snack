@@ -3,7 +3,7 @@ import { defaultState } from "../initialState";
 
 const initialState = {
   snacks: defaultState,
-  filterBy: "Пицца"
+  filterBy: "Все"
 };
 
 export const snackSlice = createSlice({
