@@ -97,6 +97,7 @@ export default function Form() {
               !street.validInput ||
               !house.validInput
             }
+            onClick={(e) => e.preventDefault()}
           >
             Оплатить сейчас
           </button>

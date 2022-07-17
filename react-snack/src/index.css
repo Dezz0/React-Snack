@@ -45,6 +45,7 @@
 .header__filter-btn label {
   cursor: pointer;
   display: inline-block;
+  text-align: center;
   width: 60px;
   border-radius: 15px;
   padding: 10px 20px;
