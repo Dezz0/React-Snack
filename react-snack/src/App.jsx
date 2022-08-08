@@ -42,7 +42,7 @@ export default function App() {
     <div className="container">
       <Header total={total} />
       <Routes>
-        <Route path="/" element={<Body addSnackInQueue={addSnackInQueue} />} />
+        <Route path="/React-Snack" element={<Body addSnackInQueue={addSnackInQueue} />} />
         <Route
           path="/cart"
           element={<Cart queue={queue} deleteSnackInQueue={deleteSnackInQueue} clearQueue={clearQueue} />}

@@ -84,7 +84,7 @@ export default function Form() {
           {house.isDirty && house.isEmpty && <div className="form__error">Поле не может быть пустым.</div>}
         </div>
         <div className="form__bottom_block">
-          <Link className="form__item-button-back button" to="/">
+          <Link className="form__item-button-back button" to="/React-Snack">
             Вернуться на главную страницу
           </Link>
           <button

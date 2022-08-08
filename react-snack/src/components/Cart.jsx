@@ -45,7 +45,7 @@ export default function Cart({ queue, deleteSnackInQueue, clearQueue }) {
         className="cart__item-button"
         style={!queue.length ? { justifyContent: "center" } : { justifyContent: "space-between" }}
       >
-        <Link className="cart__item-button-back button" to="/">
+        <Link className="cart__item-button-back button" to="/React-Snack">
           Вернуться на главную страницу
         </Link>
         <Link to="/form">
