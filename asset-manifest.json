@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Snack/static/css/main.e2b64157.css",
+    "main.js": "/React-Snack/static/js/main.fb6af859.js",
+    "index.html": "/React-Snack/index.html",
+    "main.e2b64157.css.map": "/React-Snack/static/css/main.e2b64157.css.map",
+    "main.fb6af859.js.map": "/React-Snack/static/js/main.fb6af859.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2b64157.css",
+    "static/js/main.fb6af859.js"
+  ]
+}
